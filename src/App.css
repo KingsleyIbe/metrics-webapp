@@ -2,7 +2,7 @@
 
 /* Varibles */
 :root {
-  --blueColor: #4a4af3;
+  --blueColor: #0057ff;
   --whiteColor: #fff;
 }
 
@@ -16,21 +16,28 @@
 
 body {
   font-family: 'Lato', sans-serif;
+  background-color: var(--blueColor);
+}
+
+a {
+  text-decoration: none;
+  color: var(--whiteColor);
 }
 
 .header {
   background-color: var(--blueColor);
+  width: 100%;
 }
 
 @media (max-width: 768px) {
   nav {
     padding-top: 30px;
-    gap: 40px;
+    gap: 60px;
     padding-bottom: 30px;
   }
 
   .lessthan-icon {
-    margin-top: 5px;
+    margin-top: 8px;
   }
 
   .nav-item-1 {
@@ -72,5 +79,15 @@ body {
   .settings-icon {
     margin-top: 15px;
     font-size: 1.4em;
+  }
+
+  .country-container {
+    margin-left: 30px;
+    color: rgb(61, 59, 59);
+  }
+
+  .country-name {
+    color: var(--whiteColor);
+    text-align: center;
   }
 }
