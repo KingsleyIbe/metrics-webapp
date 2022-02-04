@@ -275,12 +275,12 @@ nav {
     left: 260px;
   }
 
-  .search-icon {
-    left: 120px;
-  }
-
   .mic-icon {
     left: 230px;
+  }
+
+  .search-icon {
+    left: 120px;
   }
 
   .name {
