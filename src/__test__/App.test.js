@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
-import store from '../Redux/configureStore';
+import store from '../redux/configureStore';
 import App from '../App';
 
 describe('App page is working fine', () => {

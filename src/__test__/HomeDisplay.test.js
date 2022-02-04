@@ -2,8 +2,8 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
-import store from '../Redux/configureStore';
-import HomeDisplay from '../Components/HomeDisplay';
+import store from '../redux/configureStore';
+import HomeDisplay from '../components/HomeDisplay';
 
 describe('Render components', () => {
   test('render Home page', () => {
