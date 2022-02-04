@@ -26,6 +26,7 @@
 ## Live Demo
 
 [Live Demo Link](https://kingsleyibe.github.io/metrics-webapp/)
+[Live Video Demo](https://www.loom.com/share/2fa09b1b58c7473f9faa4594fc6edcb6)
 
 ## Getting Started
 
