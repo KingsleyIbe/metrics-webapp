@@ -19,10 +19,10 @@ const covidReducer = (state = initialState, action) => {
 };
 
 export const getData = () => (dispatch) => {
-  fetch('https://corona-api.com/countries')
+  fetch('https://api.covid19api.com/summary')
     .then((res) => res.json())
-    .then((data) => data.data.forEach((cases) => {
-      dispatch(addCovidCases(cases));
+    .then((data) => data.Countries.forEach((country) => {
+      dispatch(addCovidCases(country));
     }));
 };
 

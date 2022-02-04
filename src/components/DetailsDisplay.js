@@ -10,29 +10,29 @@ const DetailsDisplay = () => {
     dispatch(getData());
   }, []);
 
-  let country;
-  let population;
-  let confirmed;
-  let critical;
-  let deaths;
-  let updates;
-  let calculated;
-  let deathRate;
-  let recoveryRate;
-  let ratio;
+  let Country;
+  // let CountryCode;
+  let slug;
+  let newConfirmed;
+  let totalConfirmed;
+  let newDeaths;
+  let totalDeaths;
+  let newRecovered;
+  let totalRecovered;
+  let date;
 
-  const fetchInfo = detailsList.map((cases) => {
-    if (cases.code === window.location.pathname.slice(1)) {
-      country = cases.name;
-      updates = cases.updated_at;
-      population = cases.population;
-      confirmed = cases.latest_data.confirmed;
-      critical = cases.latest_data.critical;
-      deaths = cases.latest_data.deaths;
-      calculated = cases.latest_data.calculated.cases_per_million_population;
-      deathRate = cases.latest_data.calculated.death_rate;
-      recoveryRate = cases.latest_data.calculated.death_rate;
-      ratio = cases.latest_data.calculated.recovered_vs_death_ratio;
+  const fetchInfo = detailsList.map((countries) => {
+    if (countries.CountryCode === window.location.pathname.slice(1)) {
+      Country = countries.Country;
+      date = countries.Date;
+      slug = countries.Slug;
+      newConfirmed = countries.NewConfirmed;
+      totalConfirmed = countries.TotalConfirmed;
+      newDeaths = countries.NewDeaths;
+      totalDeaths = countries.TotalDeaths;
+      newRecovered = countries.NewConfirmed;
+      totalRecovered = countries.TotalRecovered;
+      totalConfirmed = countries.TotalConfirmed;
     }
     return 'Data not found';
   });
@@ -42,7 +42,7 @@ const DetailsDisplay = () => {
       <div className="main-c">
         <div className="details-country" />
         <div className="name">
-          <h2>{country}</h2>
+          <h2>{Country}</h2>
         </div>
         <div>
           <span className="updated-data">
@@ -50,44 +50,40 @@ const DetailsDisplay = () => {
           </span>
           <div className="data">
             <span>Updated at:</span>
-            <span>{updates}</span>
+            <span>{date}</span>
           </div>
           <div className="data">
-            <span>Population:</span>
-            <span>{population}</span>
+            <span>Confirmed New Cases:</span>
+            <span>{newConfirmed}</span>
           </div>
           <div>
             <span className="title">Latest Data</span>
             <div className="data">
-              <span>Deaths:</span>
-              <span>{deaths}</span>
+              <span>Total Confirmed:</span>
+              <span>{totalConfirmed}</span>
             </div>
             <div className="data">
-              <span>Confirmed Cases:</span>
-              <span>{confirmed}</span>
+              <span>New Deaths:</span>
+              <span>{newDeaths}</span>
             </div>
             <div className="data">
-              <span>Critical:</span>
-              <span>{critical}</span>
+              <span>Slug:</span>
+              <span>{slug}</span>
             </div>
           </div>
           <div>
-            <span className="title">Calculated</span>
+            <span className="title">Recovered</span>
             <div className="data">
-              <span>Death_Rate:</span>
-              <span>{deathRate}</span>
+              <span>New Recovered:</span>
+              <span>{newRecovered}</span>
             </div>
             <div className="data">
-              <span>Recovery_Rate:</span>
-              <span>{recoveryRate}</span>
+              <span>Total Recovered:</span>
+              <span>{totalRecovered}</span>
             </div>
             <div className="data">
-              <span>Recovered_vs_death_ratio:</span>
-              <span>{ratio}</span>
-            </div>
-            <div className="data">
-              <span>Cases_per_million_population:</span>
-              <span>{calculated}</span>
+              <span>Total Deaths:</span>
+              <span>{totalDeaths}</span>
             </div>
           </div>
         </div>

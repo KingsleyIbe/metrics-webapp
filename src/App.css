@@ -64,10 +64,10 @@ nav {
   position: relative;
   width: 300px;
   border-radius: 40px;
-  padding: 10px 20px;
+  padding: 6px;
   outline: none;
   background-color: var(--blueColor);
-  border: 2px solid black;
+  border: 1px solid black;
   left: 100px;
 }
 
@@ -78,8 +78,8 @@ nav {
 
 .search-icon {
   position: absolute;
-  bottom: 14px;
-  left: 283px;
+  bottom: 10px;
+  left: 288px;
   font-size: 1.3em;
   z-index: 1000;
   width: 55%;
@@ -205,4 +205,55 @@ nav {
   text-align: center;
   font-size: 16px;
   font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .header {
+    left: 0;
+  }
+
+  nav {
+    left: 0;
+  }
+
+  .search {
+    left: 0;
+  }
+
+  .mic-icon,
+  .settings-icon {
+    left: 70px;
+  }
+
+  .search-icon {
+    left: 190px;
+  }
+}
+
+@media (max-width: 414px) {
+  .header {
+    left: 0;
+  }
+
+  nav {
+    gap: 0;
+    left: 0;
+  }
+
+  .search {
+    left: 0;
+    width: 200px;
+    border-radius: 40px;
+    padding: 6px;
+    border: 2px solid black;
+  }
+
+  .mic-icon,
+  .settings-icon {
+    left: 0;
+  }
+
+  .search-icon {
+    left: 0;
+  }
 }
