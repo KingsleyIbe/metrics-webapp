@@ -10,7 +10,9 @@ export const addCovidCases = (payload) => ({
 const covidReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_CASES:
-      return [...state, action.payload];
+      return [
+        ...state, action.payload,
+      ];
     default:
       return state;
   }

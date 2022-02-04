@@ -1,7 +1,8 @@
 import { NavLink } from 'react-router-dom';
 import {
-  FaCog, FaLessThan, FaMicrophone, FaSearch,
+  FaCog, FaLessThan, FaMicrophone,
 } from 'react-icons/fa';
+import Search from './Search';
 
 const Header = () => (
   <header className="header">
@@ -13,8 +14,9 @@ const Header = () => (
         </NavLink>
       </div>
       <div className="search-input">
-        <FaSearch className="search-icon" />
-        <input type="text" placeholder="Most views" className="search" />
+        {/* <FaSearch className="search-icon" /> */}
+        {/* <input type="text" placeholder="Most views" className="search" /> */}
+        <Search />
       </div>
       <FaMicrophone className="text-white mic-icon" />
       <NavLink className="nav-item" to="/settings">

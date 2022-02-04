@@ -1,7 +1,15 @@
-import { useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getData } from '../redux/home/home';
 
-const Settings = () => {
+const DetailsDisplay = () => {
   const detailsList = useSelector((state) => state.covidReducer);
+
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getData());
+  }, []);
+
   let population;
   let confirmed;
   let critical;
@@ -48,4 +56,4 @@ const Settings = () => {
   );
 };
 
-export default Settings;
+export default DetailsDisplay;

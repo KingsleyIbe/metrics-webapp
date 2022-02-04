@@ -14,7 +14,7 @@ const HomeDisplay = () => {
   }, []);
 
   const covidCases = covidLists.map((cases) => (
-    <div className="country-container" id="country-name" key={cases.code}>
+    <div className="country-container" id="country-name" key={Math.random()}>
       <div className="country-c">
         <Link className="country-d" to={`/${cases.code}`}>
           {cases.name}
@@ -29,7 +29,7 @@ const HomeDisplay = () => {
 
   return (
     <>
-      <div className="country-name"><h2>Active Corona Cases </h2></div>
+      <div className="country-name"><h6>Active Corona Cases </h6></div>
       <div className="countries-con">
         {covidCases}
       </div>

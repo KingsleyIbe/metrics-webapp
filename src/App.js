@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Header from './components/Header';
 import Home from './pages/Home';
-import SettingsPage from './pages/SettingsPage';
+import Details from './pages/Details';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         </header>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/settings" element={<SettingsPage />} />
+          <Route path="/*" element={<Details />} />
         </Routes>
       </Router>
     </div>
