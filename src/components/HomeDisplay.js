@@ -29,7 +29,6 @@ const HomeDisplay = () => {
 
   return (
     <>
-      <div className="country-name"><h6>Active Corona Cases </h6></div>
       <div className="countries-con">
         {covidCases}
       </div>

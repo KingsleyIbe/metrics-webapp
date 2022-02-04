@@ -25,69 +25,184 @@ a {
 }
 
 .header {
-  background-color: var(--blueColor);
+  background: url(/src/images/covid-header-bg.png);
   width: 100%;
 }
 
-/* @media (max-width: 768px) { */
-  nav {
-    padding-top: 30px;
-    gap: 60px;
-    padding-bottom: 30px;
-  }
+.header h1 {
+  position: relative;
+  color: var(--whiteColor);
+  text-align: center;
+  top: 50px;
+}
 
-  .lessthan-icon {
-    margin-top: 8px;
-  }
+nav {
+  width: 100%;
+  position: relative;
+  padding-top: 30px;
+  gap: 60px;
+  padding-bottom: 30px;
+  top: 100px;
+  left: 200px;
+}
 
-  .nav-item-1 {
-    gap: 10px;
-    margin-top: 10px;
-  }
+.lessthan-icon {
+  margin-top: 8px;
+}
 
-  .home-year {
-    justify-content: space-between;
-    margin-left: 10px;
-  }
+.nav-item-1 {
+  gap: 10px;
+  margin-top: 10px;
+}
 
-  .search {
-    position: relative;
-    width: 300px;
-    border-radius: 40px;
-    padding: 10px 20px;
-    outline: none;
-    background-color: var(--blueColor);
-    border: 2px solid black;
-  }
+.home-year {
+  justify-content: space-between;
+  margin-left: 10px;
+}
 
-  .search::placeholder {
-    color: var(--whiteColor);
-    font-size: 1.2em;
-  }
+.search {
+  position: relative;
+  width: 300px;
+  border-radius: 40px;
+  padding: 10px 20px;
+  outline: none;
+  background-color: var(--blueColor);
+  border: 2px solid black;
+  left: 100px;
+}
 
-  .search-icon {
-    position: absolute;
-    top: 0;
-    font-size: 1.3em;
-    margin-top: 45px;
-    z-index: 1000;
-    width: 72%;
-    color: var(--whiteColor);
-  }
+.search::placeholder {
+  color: var(--whiteColor);
+  font-size: 1.2em;
+}
 
-  .mic-icon,
-  .settings-icon {
-    margin-top: 15px;
-    font-size: 1.4em;
-  }
+.search-icon {
+  position: absolute;
+  bottom: 14px;
+  left: 283px;
+  font-size: 1.3em;
+  z-index: 1000;
+  width: 55%;
+  color: var(--whiteColor);
+}
 
-  .country-container {
-    margin-left: 30px;
-    color: rgb(61, 59, 59);
-  }
+.search-input-icon {
+  position: relative;
+  bottom: 11px;
+  left: 50px;
+}
 
-  .country-name {
-    color: var(--whiteColor);
-    text-align: center;
-  }
-/* } */
+.mic-icon,
+.settings-icon {
+  position: relative;
+  margin-top: 15px;
+  font-size: 1.4em;
+  z-index: 1001;
+  left: 400px;
+}
+
+.country-container {
+  background: url(/src/images/woldmapbluebg.jpg);
+  background-size: cover;
+  position: relative;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
+}
+
+.countries-con {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--secondary-color);
+  padding: 10px;
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-top: 50px;
+}
+
+.country-name {
+  background-size: cover;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: width 2s;
+}
+
+.country-name:hover {
+  width: 300px;
+}
+
+.country-d {
+  color: var(--place-color);
+  font-size: 16px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.recovered {
+  color: var(--place-color);
+  font-size: 0.8em;
+  overflow: hidden;
+}
+
+.recovered > div > div {
+  color: #fff;
+  padding: 4px 12px;
+  height: 45px;
+  margin-bottom: 45px;
+  display: inline-block;
+}
+
+.recovered div:first-child {
+  animation: show 5s linear infinite;
+}
+
+.title {
+  display: block;
+  background-color: blueviolet;
+  color: #fff;
+  font-weight: bold;
+  padding: 3px 10px;
+  letter-spacing: 0.5px;
+  font-size: 1em;
+}
+
+.data {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.details-country {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  margin: 8px;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.name {
+  font-family: Lato, sans-serif;
+  color: var(--whiteColor);
+  animation-fill-mode: backwards;
+  position: absolute;
+  top: 37%;
+  left: 45%;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+}

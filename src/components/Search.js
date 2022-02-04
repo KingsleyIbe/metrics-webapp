@@ -20,14 +20,16 @@ const Search = () => {
   return (
     <>
       <div className="country-name" />
-      <FaSearch className="search-icon" />
-      <input
-        className="search"
-        type="text"
-        id="input-country"
-        placeholder="Search country..."
-        onKeyDown={searchCountry}
-      />
+      <div className="search-input-icon">
+        <FaSearch className="search-icon" />
+        <input
+          className="search"
+          type="text"
+          id="input-country"
+          placeholder="Search country..."
+          onKeyDown={searchCountry}
+        />
+      </div>
     </>
 
   );

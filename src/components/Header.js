@@ -6,6 +6,7 @@ import Search from './Search';
 
 const Header = () => (
   <header className="header">
+    <h1 className="header-h1">COVID-19 WORLD UPDATE</h1>
     <nav className="d-flex flex-row">
       <div className="home-year">
         <NavLink className="nav-item-1 d-flex flex-row" to="/">
@@ -14,8 +15,6 @@ const Header = () => (
         </NavLink>
       </div>
       <div className="search-input">
-        {/* <FaSearch className="search-icon" /> */}
-        {/* <input type="text" placeholder="Most views" className="search" /> */}
         <Search />
       </div>
       <FaMicrophone className="text-white mic-icon" />
