@@ -68,7 +68,6 @@ nav {
   outline: none;
   background-color: var(--blueColor);
   border: 1px solid black;
-  left: 100px;
 }
 
 .search::placeholder {
@@ -79,7 +78,7 @@ nav {
 .search-icon {
   position: absolute;
   bottom: 10px;
-  left: 288px;
+  left: 90px;
   font-size: 1.3em;
   z-index: 1000;
   width: 55%;
@@ -88,8 +87,8 @@ nav {
 
 .search-input-icon {
   position: relative;
-  bottom: 11px;
-  left: 50px;
+  bottom: 35px;
+  right: 150px;
 }
 
 .mic-icon,
@@ -98,7 +97,7 @@ nav {
   margin-top: 15px;
   font-size: 1.4em;
   z-index: 1001;
-  left: 400px;
+  left: 750px;
 }
 
 .country-container {
@@ -216,17 +215,33 @@ nav {
     left: 0;
   }
 
+  .home-year {
+    position: relative;
+    left: 50px;
+  }
+
+  .search-input-icon {
+    right: 130px;
+    bottom: 30px;
+  }
+
   .search {
     left: 0;
+    width: 200px;
   }
 
   .mic-icon,
   .settings-icon {
-    left: 70px;
+    left: 400px;
   }
 
   .search-icon {
-    left: 190px;
+    left: 80px;
+  }
+
+  .name {
+    top: 260px;
+    left: 300px;
   }
 }
 
@@ -240,6 +255,14 @@ nav {
     left: 0;
   }
 
+  .home-year {
+    left: 0;
+  }
+
+  .search-input-icon {
+    right: 100px;
+  }
+
   .search {
     left: 0;
     width: 200px;
@@ -248,12 +271,19 @@ nav {
     border: 2px solid black;
   }
 
-  .mic-icon,
   .settings-icon {
-    left: 0;
+    left: 260px;
+  }
+
+  .mic-icon {
+    left: 230px;
   }
 
   .search-icon {
-    left: 0;
+    left: 120px;
+  }
+
+  .name {
+    left: 140px;
   }
 }

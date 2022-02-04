@@ -14,14 +14,6 @@ const HomeDisplay = () => {
       dispatch(getData());
     }
   }, []);
-  // console.log(searchText);
-  // const check = (object) => {
-  //   if (typeof obj !== 'object') {
-  //     return true;
-  //   }
-  //   return false;
-  // };
-  // console.log(covidLists);
   const filteredData = covidLists.filter((item) => Object.keys(item).some((key) => item[key]
     .toString()
     .toLowerCase()

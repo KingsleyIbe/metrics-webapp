@@ -2,7 +2,6 @@ import { NavLink } from 'react-router-dom';
 import {
   FaCog, FaLessThan, FaMicrophone,
 } from 'react-icons/fa';
-// import Search from './Search';
 
 const Header = () => (
   <header className="header">
@@ -14,9 +13,6 @@ const Header = () => (
           <h3 className="text-white logo">2022</h3>
         </NavLink>
       </div>
-      {/* <div className="search-input"> */}
-      {/* <Search /> */}
-      {/* </div> */}
       <FaMicrophone className="text-white mic-icon" />
       <NavLink className="nav-item" to="/settings">
         <FaCog className="text-white settings-icon" />

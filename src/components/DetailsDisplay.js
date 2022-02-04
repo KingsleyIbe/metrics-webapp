@@ -11,7 +11,6 @@ const DetailsDisplay = () => {
   }, []);
 
   let Country;
-  // let CountryCode;
   let slug;
   let newConfirmed;
   let totalConfirmed;
