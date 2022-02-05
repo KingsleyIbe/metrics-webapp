@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/metrics-webapp/static/css/main.a8db26a0.css",
-    "main.js": "/metrics-webapp/static/js/main.fd7d4e49.js",
+    "main.js": "/metrics-webapp/static/js/main.ae0688b0.js",
     "static/media/woldmapbluebg.jpg": "/metrics-webapp/static/media/woldmapbluebg.0a74e755718deed511f4.jpg",
     "static/media/covid-header-bg.png": "/metrics-webapp/static/media/covid-header-bg.36506c8b9b7f27517238.png",
     "index.html": "/metrics-webapp/index.html",
     "main.a8db26a0.css.map": "/metrics-webapp/static/css/main.a8db26a0.css.map",
-    "main.fd7d4e49.js.map": "/metrics-webapp/static/js/main.fd7d4e49.js.map"
+    "main.ae0688b0.js.map": "/metrics-webapp/static/js/main.ae0688b0.js.map"
   },
   "entrypoints": [
     "static/css/main.a8db26a0.css",
-    "static/js/main.fd7d4e49.js"
+    "static/js/main.ae0688b0.js"
   ]
 }
