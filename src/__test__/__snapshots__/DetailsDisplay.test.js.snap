@@ -34,7 +34,7 @@ exports[`Render components render Details page 1`] = `
       className="data"
     >
       <span>
-        Population:
+        Confirmed New Cases:
       </span>
       <span />
     </div>
@@ -48,7 +48,7 @@ exports[`Render components render Details page 1`] = `
         className="data"
       >
         <span>
-          Deaths:
+          Total Confirmed:
         </span>
         <span />
       </div>
@@ -56,7 +56,7 @@ exports[`Render components render Details page 1`] = `
         className="data"
       >
         <span>
-          Confirmed Cases:
+          New Deaths:
         </span>
         <span />
       </div>
@@ -64,7 +64,7 @@ exports[`Render components render Details page 1`] = `
         className="data"
       >
         <span>
-          Critical:
+          Slug:
         </span>
         <span />
       </div>
@@ -73,13 +73,13 @@ exports[`Render components render Details page 1`] = `
       <span
         className="title"
       >
-        Calculated
+        Recovered
       </span>
       <div
         className="data"
       >
         <span>
-          Death_Rate:
+          New Recovered:
         </span>
         <span />
       </div>
@@ -87,7 +87,7 @@ exports[`Render components render Details page 1`] = `
         className="data"
       >
         <span>
-          Recovery_Rate:
+          Total Recovered:
         </span>
         <span />
       </div>
@@ -95,15 +95,7 @@ exports[`Render components render Details page 1`] = `
         className="data"
       >
         <span>
-          Recovered_vs_death_ratio:
-        </span>
-        <span />
-      </div>
-      <div
-        className="data"
-      >
-        <span>
-          Cases_per_million_population:
+          Total Deaths:
         </span>
         <span />
       </div>

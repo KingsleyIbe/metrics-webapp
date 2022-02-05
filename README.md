@@ -84,6 +84,10 @@ Feel free to check the [issues page](https://github.com/KingsleyIbe/metrics-weba
 
 Give a ⭐️ if you like this project!
 
+## Acknowledgement
+
+[Original Design by Nelson Sakwa on behance](https://www.behance.net/sakwadesignstudio)
+
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.

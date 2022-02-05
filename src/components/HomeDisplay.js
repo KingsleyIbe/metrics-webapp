@@ -22,7 +22,7 @@ const HomeDisplay = () => {
   const covidCases = filteredData.map((country) => (
     <div className="country-container" id="country-name" key={Math.random()}>
       <div className="country-c">
-        <Link className="country-d" to={`/${country.CountryCode}`}>
+        <Link className="country-d" to={`/${country.Country}`}>
           {country.Country}
         </Link>
       </div>

@@ -21,7 +21,7 @@ const DetailsDisplay = () => {
   let date;
 
   const fetchInfo = detailsList.map((countries) => {
-    if (countries.CountryCode === window.location.pathname.slice(1)) {
+    if (countries.Country === window.location.pathname.slice(1)) {
       Country = countries.Country;
       date = countries.Date;
       slug = countries.Slug;
