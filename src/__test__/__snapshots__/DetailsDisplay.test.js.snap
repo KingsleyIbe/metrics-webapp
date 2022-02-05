@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render components render Details page 1`] = `
+<div
+  className="main-c"
+>
+  <div
+    className="details-country"
+  />
+  <div
+    className="name"
+  >
+    <h2 />
+  </div>
+  <div>
+    <span
+      className="updated-data"
+    >
+      <span
+        className="title"
+      >
+        Statistics
+      </span>
+    </span>
+    <div
+      className="data"
+    >
+      <span>
+        Updated at:
+      </span>
+      <span />
+    </div>
+    <div
+      className="data"
+    >
+      <span>
+        Confirmed New Cases:
+      </span>
+      <span />
+    </div>
+    <div>
+      <span
+        className="title"
+      >
+        Latest Data
+      </span>
+      <div
+        className="data"
+      >
+        <span>
+          Total Confirmed:
+        </span>
+        <span />
+      </div>
+      <div
+        className="data"
+      >
+        <span>
+          New Deaths:
+        </span>
+        <span />
+      </div>
+      <div
+        className="data"
+      >
+        <span>
+          Slug:
+        </span>
+        <span />
+      </div>
+    </div>
+    <div>
+      <span
+        className="title"
+      >
+        Recovered
+      </span>
+      <div
+        className="data"
+      >
+        <span>
+          New Recovered:
+        </span>
+        <span />
+      </div>
+      <div
+        className="data"
+      >
+        <span>
+          Total Recovered:
+        </span>
+        <span />
+      </div>
+      <div
+        className="data"
+      >
+        <span>
+          Total Deaths:
+        </span>
+        <span />
+      </div>
+    </div>
+  </div>
+</div>
+`;
