@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { FaSearch } from 'react-icons/fa';
+import { BsArrowRightCircle } from 'react-icons/bs';
 import { getData } from '../redux/home/home';
 
 const HomeDisplay = () => {
@@ -21,6 +22,7 @@ const HomeDisplay = () => {
 
   const covidCases = filteredData.map((country) => (
     <div className="country-container" id="country-name" key={Math.random()}>
+      <BsArrowRightCircle />
       <div className="country-c">
         <Link className="country-d" to={`/${country.Country}`}>
           {country.Country}
